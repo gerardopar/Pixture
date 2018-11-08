@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- local stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>PIXTURE</title>
+</head>
+<body>
+
+    <main class="main">
+        <!-- header -->
+        <header class="header z-depth-5">
+            <h1 class="white-text header__title">PIXTURE</h1>
+
+            <nav class="header__nav">
+                <button id="show-signin" class="btn-small waves-effect waves-light header__btn--signin">Sign In</button>
+                <button id="show-signup" class="btn-small waves-effect waves-light header__btn--signout">Sign Up</button>
+            </nav>
+        </header>
+
+        <div class="main__form--container">
+
+            <!-- sign in form -->
+            <div id="signin-wrap">
+            <form id="signin-form" class="main__form--signin z-depth-5">
+                <h1 class="form__title">LOGIN <br/> 
+                    <span class="form__title--span">To begin searching Images</span>
+                </h1>
+                <div class="form__input--wrap">
+                    <input id="email-signin" type="email" placeholder="Email" name="email" class="form__input" autocomplete="off"/>
+                    <p id="error-email" class="form__errors--email"></p>
+                </div>
+                <div class="form__input--wrap">
+                    <input id="password-signin" type="password" placeholder="Password" name="password" class="form__input" autocomplete="off"/>
+                    <p id="error-password" class="form__errors--password"></p>
+                </div>
+                <!-- color to be used deep-purple accent-2 -->
+                <button id="formLogin-btn" class="btn-small waves-effect waves-light form__btn">Login</button>
+            </form>
+            </div>
+
+            <!-- sign up form -->
+            <div id="signup-wrap">
+            <form id="signup-form" class="main__form--signup z-depth-5">
+                <h1 class="form__title">REGISTER <br/>    
+                    <span class="form__title--span">To begin exploring Images</span>
+                </h1>
+                <div class="form__input--wrap">
+                    <input id="email-signup" type="email" placeholder="Email" class="form__input" autocomplete="off"/>
+                    <p id="error-email2" class="form__errors--email"></p>
+                </div>
+                <div class="form__input--wrap">
+                    <input id="password-signup" type="password" placeholder="Password" class="form__input" autocomplete="off"/>
+                    <p id="error-password2" class="form__errors--password"></p>
+                </div>
+                <button id="formRegister-btn" class="btn-small waves-effect waves-light form__btn">Register</button>
+            </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <h6 class="footer__text">Copyright&#169; 2018 Pixture All Rights Reserved</h6>
+    </footer>
+
+</body>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- javascript bundle -->
+    <script type="text/javascript" src="scripts/index-bundle.js"></script>
+</html>

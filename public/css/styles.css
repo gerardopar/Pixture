@@ -1,0 +1,303 @@
+/* document setup */
+*{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-size: 62.5%;
+}
+
+html{
+    font-size: 16px;
+}
+
+.btn{
+    background-color: none;
+}
+.btn:visited{
+    background-color: none;
+}
+.btn:hover {
+    background-color: none;
+}
+.btn:active{
+    background-color: none;
+}
+.btn:focus{
+    background-color: none;
+}
+.btn:visited{
+    background-color: none;
+}
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    border-bottom: none;
+}
+
+/* header */
+.header{
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.header__title{
+    font-weight: 100;
+    margin: 0;
+    margin-left: 15px;
+}
+
+.header__nav{
+    align-items: center;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    justify-content: flex-end;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+.header__btn--signin{
+    border: none;
+    background: none;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+.header__btn--signout{
+    border: none;
+    background: none;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* form container */
+.main{
+    /* background-image: url('../img/blue.jpg'); */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form__title{
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.form__title--span{
+    font-size: 1rem;
+}
+
+.main__form--container{
+    align-items: center;
+    display: flex;
+    height: 92vh;
+    justify-content: center;
+    position: relative;
+}
+
+/* forms and inputs */
+.main__form--signin{
+    align-items: center;
+    background-color: rgba(31, 31, 31, 0.70);
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: flex-start;
+    text-align: center;
+    width: 400px;
+}
+
+#signup-wrap{
+    display: none;
+}
+.main__form--signup{
+    align-items: center;
+    background-color: rgba(31, 31, 31, 0.70);
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: flex-start;
+    text-align: center;
+    width: 400px;
+}
+
+.form__input--wrap{
+    width: 75%;
+    text-align: left;
+}
+
+.form__input{
+    color: whitesmoke;
+}
+
+/* .form__input--wrap input:focus{
+    border-bottom: solid 2px #7e57c2 !important;
+} */
+
+.form__btn{
+    border: none;
+    margin-top: 12%;
+}
+
+.form__errors--password,
+.form__errors--email{
+    color: red;
+    font-size: .75rem;
+}
+
+/* footer */
+.footer{
+    align-items: center;
+    display: flex;
+    background-color: rgb(26, 26, 26);
+    height: 10vh;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.footer__text{
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+/** media queries  landscape mode*/
+@media (max-width: 575.98px) and (orientation: landscape) {
+    .header__title{
+        font-size: 2rem;
+    }
+
+    .main__form--container{
+        height: 105vh;
+    }
+
+    .main__form--signin{
+        height: 325px;
+        width: 400px;
+    }
+
+    .main__form--signup{
+        height: 325px;
+        width: 400px;
+    }
+
+    .form__btn{
+        margin-top: 3%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) and (orientation: landscape)  {
+    .header__title{
+        font-size: 2rem;
+    }
+
+    .main__form--container{
+        height: 100vh;
+    }
+
+    .main__form--signin{
+        height: 350px;
+        width: 400px;
+    }
+
+    .main__form--signup{
+        height: 350px;
+        width: 400px;
+    }
+
+    .form__btn{
+        margin-top: 6%;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: landscape) {
+    .header__title{
+        font-size: 2rem;
+    }
+
+    .main__form--container{
+        height: 100vh;
+    }
+
+    .main__form--signin{
+        height: 350px;
+        width: 400px;
+    }
+
+    .main__form--signup{
+        height: 350px;
+        width: 400px;
+    }
+
+    .form__btn{
+        margin-top: 6%;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+/** media queries  portrait mode*/
+@media (max-width: 398.98px) and (orientation: portrait) {
+    .header__title{
+        font-size: 2rem;
+    }
+
+    .main__form--container{
+        height: 100vh;
+    }
+
+    .main__form--signin{
+        width: 320px;
+    }
+
+    .main__form--signup{
+        width: 320px;
+    }
+
+    .header__btn--signin{
+        font-size: .67rem;
+    }
+    
+    .header__btn--signout{
+        font-size: .67rem;
+    }
+
+    .footer__text{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) and (min-width: 399.98px) and (orientation: portrait) {
+    .header__title{
+        font-size: 2rem;
+    }
+
+    .main__form--container{
+        height: 100vh;
+    }
+
+    .footer__text{
+        font-size: 1rem;
+    }
+
+}

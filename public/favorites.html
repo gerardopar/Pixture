@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- local stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles-favorites.css">
+    <title>PIXTURE</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header z-depth-5">
+        <h1 class="white-text header__title">PIXTURE</h1>
+
+        <nav class="header__nav">
+            <a class="large material-icons" href="dashboard.html">home</a>
+            <button id="btn-signOut" class="btn-small red waves-effect waves-light header__btn--signout">Sign Out</button>
+        </nav>
+    </header>
+
+    <div class="fav__msg--container">
+        <p class="fav__msg">All Images saved to Favorites <span class="material-icons">star</span> Will expire within 24hrs.</p>
+        <p class="fav__msg--sub">*Individual images will be removed within a 24hr period from the moment they are saved</p>
+    </div>
+
+    <main class="fav">
+        <section class="fav__container">
+        <!-- javascript will inject favorite images here -->
+        
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h6 class="footer__text">Copyright&#169; 2018 Pixture All Rights Reserved</h6>
+    </footer>
+        
+</body>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- javascript bundle -->
+    <script type="text/javascript" src="scripts/favorites-bundle.js"></script>
+</html>
